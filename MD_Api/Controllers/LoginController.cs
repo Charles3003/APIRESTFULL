@@ -13,6 +13,10 @@ namespace MD_Api.Controllers
         {
             return true;
         }
+        public bool Autenticar_Usuario()
+        {
+            return true;
+        }
     }
 
     public class Usuario

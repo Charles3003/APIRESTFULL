@@ -16,7 +16,7 @@ namespace MD_Api
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "balanco/{controller}/{ano}",
+                routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(
