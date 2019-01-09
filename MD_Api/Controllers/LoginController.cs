@@ -9,13 +9,13 @@ namespace MD_Api.Controllers
 {
     public class LoginController : ApiController
     {
-        public bool Autenticar_Usuario(string pEmail, string pSenha)
+        public Usuario Get(string pEmail, string pSenha)
         {
-            return true;
-        }
-        public bool Autenticar_Usuario()
-        {
-            return true;
+            Usuario oUsuario = new Usuario();
+            oUsuario.Codigo = 1;
+            oUsuario.Email = pEmail;
+            oUsuario.Senha = pSenha;
+            return oUsuario;
         }
     }
 
